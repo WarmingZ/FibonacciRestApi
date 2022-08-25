@@ -11,7 +11,7 @@ namespace Fibonacci
 			Fibonaccis = new List<Fibonacci>
 				{
 					new Fibonacci {Id = 0, Row = new int[] {1,2,3,5,8}}
-				};	
+				};
 
 		}
 
@@ -64,13 +64,13 @@ namespace Fibonacci
 		}
 
 		public static bool FibonacciEquals(Fibonacci fibonacci)
-    {
+		{
 			var row = fibonacci.Row;
-        for (int i = 0; i < row.Length - 2; i++)
-            if (row[i] + row[i + 1] != row[i + 2])
-                return false;
-        return true;
-    }
+			for (int i = 0; i < row.Length - 2; i++)
+				if (row[i] + row[i + 1] != row[i + 2])
+					return false;
+			return true;
+		}
 
 	}
 }
