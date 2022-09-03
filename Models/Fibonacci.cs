@@ -13,7 +13,6 @@ namespace Fibonacci
 
 		public Fibonacci()
 		{
-
 		}
 	}
 }

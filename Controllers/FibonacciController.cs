@@ -30,8 +30,8 @@ namespace Fibonacci
 		[HttpPost]
 		public  IActionResult Create(Fibonacci fibonacci)
 		{
-			if(fibonacci.Row.Length <= 1)
-				return BadRequest("Bad request: The array is empty or consists of one element");
+			if(fibonacci.Row.Length <= 2)
+				return BadRequest("Bad request: The array is empty or does not contain enough elements");
 
 
 			if(FibonacciServices.FibonacciEquals(fibonacci) == true){

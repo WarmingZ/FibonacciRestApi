@@ -5,12 +5,12 @@ namespace Fibonacci
 	public class FibonacciServices
 	{
 		static List<Fibonacci> Fibonaccis { get; }
-		static int nextId = 2;
+		static int nextId = 1;
 		static FibonacciServices()
 		{
 			Fibonaccis = new List<Fibonacci>
 				{
-					new Fibonacci {Id = 0, Row = new int[] {1,2,3,5,8}}
+					new Fibonacci {Id = 0, Row = new int[] {1,1,2,3,5,8}}
 				};
 
 		}
